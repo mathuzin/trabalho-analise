@@ -13,7 +13,7 @@ function medirTempo(fn, arr) {
 
 describe('Benchmark de algoritmos de ordenacao', () => {
     const tamanho = 10000;
-    const repeticoes = 10;
+    const repeticoes = 20;
     const arrayOriginal = gerarArray(tamanho);
 
     test('Tempo medio - MergeSort', () => {
