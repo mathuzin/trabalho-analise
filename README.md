@@ -1,8 +1,6 @@
 # trabalho-analise
 
 BubbleSort:
-    Melhor Caso: O(n), a array já esta ordenada.
-    Pior Caso: O(n^2), a array esta invertida.
 
 function bubblesort(arr) {
     let n = arr.length;
@@ -26,8 +24,6 @@ function bubblesort(arr) {
  -----------------------------------------------------------------------------------------------------------------------------
 
  QuickSort: 
-    Melhor Caso: O(n log n), o pivo divide bem no meio da array.
-    Pior Caso: O(n^2), o pivo é o maior/menor valor
 
 function medianOfThree(arr, left, right) {
     const mid = Math.floor((left + right) / 2); 
@@ -68,7 +64,6 @@ Melhor caso = O(n) * O(log n) = O(n log n)
  -----------------------------------------------------------------------------------------------------------------------------
 
  MergeSort: 
-    Melhor/Pior Caso: O(n log n)
 
 function mergeSort(arr) {
     if (arr.length <= 1) {
@@ -104,3 +99,28 @@ function merge(esq, dir) {
 }
 
 Melhor/Pior caso = O(n) * O(log n) = O(n log n)
+
+ -----------------------------------------------------------------------------------------------------------------------------
+
+ Resultados Testes Experimentais:
+
+ Repetições: 10
+
+ Tamanho: 100
+
+Tempo médio - QuickSort (5 ms)
+Tempo médio - BubbleSort (9 ms)
+Tempo médio - MergeSort (25 ms)
+
+ Tamanho: 1.000
+
+Tempo médio - QuickSort (19 ms)
+Tempo médio - MergeSort (40 ms)
+Tempo médio - BubbleSort (109 ms)
+
+ Tamanho: 10.000
+
+Tempo médio - QuickSort (107 ms)
+Tempo médio - MergeSort (469 ms)
+Tempo médio - BubbleSort (9217 ms)
+
