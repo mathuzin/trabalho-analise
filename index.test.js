@@ -32,7 +32,7 @@ describe("Benchmark de algoritmos de ordenacao", () => {
     let tempos = [];
     for (let i = 0; i < repeticoes; i++) {
       const array = gerarArray(tamanho);
-      const tempo = medirTempo(quicksort, array); // corrigido
+      const tempo = medirTempo(quicksort, array);
       tempos.push(tempo);
     }
     const media = tempos.reduce((a, b) => a + b) / tempos.length;

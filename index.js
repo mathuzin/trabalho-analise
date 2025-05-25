@@ -27,7 +27,7 @@ function quicksort(arr, left = 0, right = arr.length - 1) {
     if (left >= right) return arr;
 
     const pivotIndex = medianOfThree(arr, left, right);
-    [arr[pivotIndex], arr[right]] = [arr[right], arr[pivotIndex]]; // Move pivô para o fim
+    [arr[pivotIndex], arr[right]] = [arr[right], arr[pivotIndex]];
     const pivot = arr[right];
 
     let i = left;
@@ -38,7 +38,7 @@ function quicksort(arr, left = 0, right = arr.length - 1) {
             i++;
         }
     }
-    [arr[i], arr[right]] = [arr[right], arr[i]]; // Posição final do pivô
+    [arr[i], arr[right]] = [arr[right], arr[i]];
 
     quicksort(arr, left, i - 1);
     quicksort(arr, i + 1, right);
